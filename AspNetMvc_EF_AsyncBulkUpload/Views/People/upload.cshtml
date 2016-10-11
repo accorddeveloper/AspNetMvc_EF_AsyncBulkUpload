@@ -1,0 +1,16 @@
+﻿@using ViewModel
+@model FileUploadViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+    <div>
+        <a href="/People/Index">Back</a>
+        <form action="/People/Upload/CVS" method="post" enctype="multipart/form-data">
+            Select File : <input type="file" name="fileUpload" value="" />
+            <input type="submit" name="name" value="Upload" />
+        </form>
+    </div>
+
